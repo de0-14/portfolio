@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deover "Deo" P. Pasco Jr. — Aspiring Programmer & IT Specialist</title>
+<meta id="meta-description" name="description" content="Portfolio of Deover Pasco Jr. — IT student, programmer, and photographer.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%230a0a0a%22/><text x=%2250%22 y=%2268%22 font-size=%2260%22 fill=%22%23ff6a1a%22 text-anchor=%22middle%22 font-family=%22monospace%22>D</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="no-js">
+
+<!-- Boot sequence -->
+<div id="boot-screen" aria-hidden="true">
+  <div id="boot-log"></div>
+</div>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand"><span class="dot"></span>deo@3pit<span style="color:var(--text-dim)">:~$</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">menu</button>
+    <nav class="nav-links">
+      <a href="#about">about</a>
+      <a href="#ventures">ventures</a>
+      <a href="#skills">skills</a>
+      <a href="#projects">projects</a>
+      <a href="#accomplishments">log</a>
+      <a href="#gallery">gallery</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="hero-status"><span class="blip"></span><span id="hero-status-text">STATUS: AVAILABLE_FOR_PROJECTS</span></div>
+        <h1>Deover <span class="accent">"Deo"</span> P. Pasco Jr.</h1>
+        <p class="role-line" id="hero-role-line"></p>
+        <p class="bio" id="hero-bio"></p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="https://github.com/de0-14" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="term-card">
+        <div class="term-bar">
+          <span class="dots"><span></span><span></span><span></span></span>
+          whoami.sh
+        </div>
+        <div class="term-body">
+          <div class="term-row"><span class="k">user</span><span class="v">deo_pasco_jr</span></div>
+          <div class="term-row"><span class="k">role</span><span class="v">IT Student / Programmer</span></div>
+          <div class="term-row"><span class="k">major</span><span class="v">Information Security</span></div>
+          <div class="term-row"><span class="k">venture</span><span class="v">3P IT Services (co-founder)</span></div>
+          <div class="term-row"><span class="k">side_quest</span><span class="v">photography — FLT Collective</span></div>
+          <div class="term-row"><span class="k">location</span><span class="v" id="term-location"></span></div>
+          <div class="term-row" style="border-bottom:none;"><span class="prompt">&gt;</span> <span class="v">ready to build.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="avatar-box">
+        <img src="assets/img/avatar-placeholder.svg" alt="Portrait placeholder for Deo Pasco Jr." loading="lazy">
+      </div>
+      <div class="about-text">
+        <p class="eyebrow">cat about.txt</p>
+        <h2 class="section-title">A bit about me</h2>
+        <p class="lede" id="about-lede"></p>
+        <p>Outside of coursework, most of my hands-on learning happens through real client work with 3P IT Services — actual systems, actual deadlines, actual bugs to fix at 1am. It's where the theory from Information Security classes meets what businesses actually need.</p>
+        <div class="info-list">
+          <div><span class="k">based_in</span> <span id="about-location"></span></div>
+          <div><span class="k">focus</span> Information Security / Software Development</div>
+          <div><span class="k">also_does</span> Photography (FLT Collective)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VENTURES ============ -->
+  <section id="ventures">
+    <div class="wrap">
+      <p class="eyebrow">ps -aux | grep ventures</p>
+      <h2 class="section-title">Things I'm building<small>Two running processes, both self-started</small></h2>
+      <div class="venture-grid" id="venture-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills">
+    <div class="wrap">
+      <p class="eyebrow">cat skills.log</p>
+      <h2 class="section-title">Toolkit</h2>
+      <div class="skills-grid" id="skills-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects">
+    <div class="wrap">
+      <p class="eyebrow">ls ~/projects --notable</p>
+      <h2 class="section-title">Notable builds<small>Real systems, commissioned by real clients</small></h2>
+      <div class="project-list" id="project-list"></div>
+    </div>
+  </section>
+
+  <!-- ============ ACCOMPLISHMENTS ============ -->
+  <section id="accomplishments">
+    <div class="wrap">
+      <p class="eyebrow">cat achievements.log</p>
+      <h2 class="section-title">Track record<small>Academics, competitions, and everything in between</small></h2>
+      <div class="log-groups" id="log-groups"></div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section id="gallery">
+    <div class="wrap">
+      <p class="eyebrow">ls ~/gallery — FLT Collective</p>
+      <h2 class="section-title">Behind the lens<small>Flicks taken for fun, posted @flt.collective</small></h2>
+
+      <div class="gallery-empty" id="gallery-empty" style="display:none;">
+        No photos loaded yet.<br>
+        Drop image files into <code>assets/photos/</code> and list their filenames in <code>assets/js/data.js</code> (see the <code>galleryPhotos</code> array).
+      </div>
+      <div class="gallery-grid" id="gallery-grid"></div>
+
+      <p class="form-note" style="margin-top:1.5rem;">More on Instagram — <a href="https://instagram.com/flt.collective" target="_blank" rel="noopener" style="color:var(--orange)">@flt.collective</a></p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="eyebrow">./contact.sh</p>
+        <h2 class="section-title">Let's talk<small>Client work, collabs, or just to say hi</small></h2>
+        <div class="social-list" id="social-list"></div>
+      </div>
+
+      <div>
+        <div class="alert" id="contact-alert" style="display:none;"></div>
+
+        <form id="contact-form">
+          <div class="form-field">
+            <label for="name">name</label>
+            <input type="text" id="name" name="name" required placeholder="Juan dela Cruz">
+          </div>
+          <div class="form-field">
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" required placeholder="you@email.com">
+          </div>
+          <div class="form-field">
+            <label for="message">message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Got a project or just want to say hi?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-note">This opens your email app with the message pre-filled to deoverpascojr@gmail.com.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>DEO_OS v1.0 · built with HTML, CSS <span class="heart">♥</span> JS · © <span id="footer-year"></span> Deover P. Pasco Jr.</p>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

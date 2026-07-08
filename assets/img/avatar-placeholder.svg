@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="#211d18"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </radialGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff6a1a"/>
+      <stop offset="100%" stop-color="#8a3a10"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#g)"/>
+  <g stroke="#2a2823" stroke-width="1" fill="none" opacity="0.8">
+    <path d="M0 80 H120 V180 H260 V400"/>
+    <path d="M400 60 H300 V150 H180 V400"/>
+    <path d="M0 320 H90 V260"/>
+    <path d="M400 340 H330 V240"/>
+    <circle cx="120" cy="180" r="3" fill="#ff6a1a"/>
+    <circle cx="260" cy="180" r="3" fill="#ff6a1a"/>
+    <circle cx="300" cy="150" r="3" fill="#ff6a1a"/>
+    <circle cx="180" cy="150" r="3" fill="#ff6a1a"/>
+    <circle cx="90" cy="260" r="3" fill="#ff6a1a"/>
+    <circle cx="330" cy="240" r="3" fill="#ff6a1a"/>
+  </g>
+  <circle cx="200" cy="180" r="86" fill="none" stroke="url(#edge)" stroke-width="2"/>
+  <text x="200" y="205" font-family="'JetBrains Mono', monospace" font-size="72" font-weight="700" fill="#ededea" text-anchor="middle">DP</text>
+  <text x="200" y="330" font-family="'JetBrains Mono', monospace" font-size="15" letter-spacing="2" fill="#ff9248" text-anchor="middle">DEO_PASCO_JR</text>
+</svg>
