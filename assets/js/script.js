@@ -118,19 +118,50 @@ function renderGallery() {
   const empty = document.getElementById('gallery-empty');
   grid.innerHTML = '';
 
-  if (!galleryPhotos.length) {
+  if (!instagramPosts.length) {
     empty.style.display = 'block';
     grid.style.display = 'none';
     return;
   }
 
   empty.style.display = 'none';
-  grid.style.display = 'grid';
-  galleryPhotos.forEach(src => {
-    grid.appendChild(el('div', { class: 'gallery-item' }, [
-      el('img', { attrs: { src, alt: 'Photograph by Deo Pasco Jr. — FLT Collective', loading: 'lazy' } }),
-    ]));
+  grid.style.display = 'flex';
+
+  instagramPosts.forEach(url => {
+    const wrapper = el('div', { class: 'ig-embed-item' }, [
+      el('blockquote', {
+        class: 'instagram-media',
+        attrs: {
+          'data-instgrm-permalink': url,
+          'data-instgrm-version': '14',
+        },
+      }),
+    ]);
+    grid.appendChild(wrapper);
   });
+
+  loadInstagramEmbedScript();
+}
+
+/**
+ * Loads Instagram's embed.js once, then re-runs its processor whenever
+ * new blockquotes are added to the page (it only auto-scans on its own load).
+ */
+function loadInstagramEmbedScript() {
+  if (window.instgrm && window.instgrm.Embeds) {
+    window.instgrm.Embeds.process();
+    return;
+  }
+  if (document.getElementById('ig-embed-script')) return; // already loading
+
+  const script = document.createElement('script');
+  script.id = 'ig-embed-script';
+  script.async = true;
+  script.src = 'https://www.instagram.com/embed.js';
+  script.onload = () => {
+    if (window.instgrm && window.instgrm.Embeds) window.instgrm.Embeds.process();
+  };
+  document.body.appendChild(script);
 }
 
 /* ---------------------------------------------------------

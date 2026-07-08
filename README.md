@@ -16,19 +16,26 @@ Upload the whole folder to any static host — GitHub Pages, Netlify, Vercel, or
 
 Everything — bio, socials, ventures, skills, projects, and the accomplishments log — lives in **`assets/js/data.js`**. Edit the objects/arrays there and the whole site updates automatically (script.js renders it into the page).
 
-## Adding your photos
+## Gallery — embedded Instagram posts
 
-1. Drop `.jpg`, `.jpeg`, `.png`, or `.webp` files into `assets/photos/`.
-2. Open `assets/js/data.js` and add each filename to the `galleryPhotos` array:
+The "Behind the Lens" gallery no longer uses local image files — it embeds live Instagram posts directly. To change which posts show up, edit the `instagramPosts` array in `assets/js/data.js`:
 
 ```js
-const galleryPhotos = [
-  'assets/photos/street-01.jpg',
-  'assets/photos/street-02.jpg',
+const instagramPosts = [
+  'https://www.instagram.com/p/POST_ID_1/',
+  'https://www.instagram.com/p/POST_ID_2/',
 ];
 ```
 
-They'll appear in the "Behind the Lens" gallery.
+Just paste the post URL from Instagram (the `/p/.../` link) — script.js turns each one into a live embed automatically using Instagram's own embed script.
+
+**Note:** this pulls content live from Instagram, so it needs an internet connection to render, and works best when the page is served over `http(s)` rather than opened directly as a `file://` path (some browsers restrict third-party embeds on local files). If the embeds don't show up when double-clicking `index.html`, try running a local server instead:
+
+```bash
+python3 -m http.server
+```
+
+then visit `http://localhost:8000`.
 
 ## Contact form
 

@@ -126,12 +126,11 @@ const accomplishments = {
 };
 
 /**
- * Photography gallery.
- * Static sites can't scan a folder on their own — so just list your filenames here.
- * Drop the actual image files into assets/photos/ and add their filenames below.
- * Example: 'assets/photos/street-01.jpg'
+ * Photography gallery — embedded directly from Instagram posts.
+ * Add or remove post URLs here; script.js turns each into a live Instagram embed.
  */
-const galleryPhotos = [
-  // 'assets/photos/your-photo-1.jpg',
-  // 'assets/photos/your-photo-2.jpg',
+const instagramPosts = [
+  'https://www.instagram.com/p/DJlUVwtybRZ/',
+  'https://www.instagram.com/p/DFMgjhoSRKd/',
+  'https://www.instagram.com/p/DFaAgHuSfEh/',
 ];

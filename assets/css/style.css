@@ -426,10 +426,17 @@ header.site-nav {
    Gallery
    ========================================================= */
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: flex-start;
 }
+.ig-embed-item {
+  flex: 1 1 326px;
+  max-width: 540px;
+  min-width: 300px;
+}
+.ig-embed-item iframe { border-radius: 8px !important; }
 .gallery-item {
   aspect-ratio: 4/5;
   border-radius: 6px;
