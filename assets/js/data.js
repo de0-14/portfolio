@@ -107,6 +107,14 @@ const accomplishments = {
     { y: null, text: 'Took part in TNTS IncluSave and Leadership Program' },
     { y: null, text: 'ASP (Alliance of Student Programmers) Service Awardee, Tagum National Trade School' },
   ],
+  'Community Service Works (as a Member of DeMolay)': [
+    { y: '2022', text: 'Donated Goods in Talaingod (Non-DeMolay Related) — bringing hope to students in need' },
+    { y: 'May 2024', text: 'Tree Planting — helping the environment grow stronger' },
+    { y: 'Jul 2024', text: 'Brigada Eskwela at Pandapan Integrated School — supporting education through community action' },
+    { y: 'Nov 2024', text: 'Outreach at the Home for the Aged — sharing love and care with elders' },
+    { y: 'Dec 2024', text: 'Community Outreach in Talaingod, Davao del Norte — spearheaded by Tagum Builders Contractor Corp., in collaboration with Dalisay DeMolay Alumni Chapter No. 33 and Bite King' },
+    { y: 'Feb 2025', text: '"Palugaw sa Kabuntagon" & Church Service — uniting the community through service and faith' },
+  ],
   'Training & Certifications': [
     { y: null, text: 'Completed AI Ready ASEAN — Hour of Code Training, by Limitless Lab with support from Google.org' },
     { y: null, text: 'Completed AI for Oceans — Hour of Code, by Code.org, demonstrating core Computer Science concepts' },
