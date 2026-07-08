@@ -52,6 +52,9 @@ const skills = [
   { name: 'CSS', note: 'Styling & layout' },
   { name: 'Java', note: 'OOP fundamentals' },
   { name: 'Python', note: 'Scripting & logic' },
+  { name: 'Photography', note: 'FLT Collective' },
+  { name: 'Graphic Design', note: 'Visuals & branding' },
+  { name: 'and more...', note: 'Always picking up something new' },
 ];
 
 const projects = [
