@@ -101,6 +101,7 @@ const accomplishments = {
     { y: '2025', text: '1st Place, Smart Talking and Interviewing (Smart Talker) — TNTS Intramurals' },
     { y: null, text: 'Excellence Awardee — led the team to 1st Place Best Paper in Category (ICT), The Groundwork Intra-School Research Congress' },
     { y: null, text: 'Excellence Awardee — led the team to 1st Place Best Paper Presentation in Category (ICT), The Groundwork Intra-School Research Congress' },
+    { y: '2026', text: 'Participant of Tagum Innovathon & StartupTech Summit' },
   ],
   'Community & Service': [
     { y: '2024', text: 'Organized stands and booths — LDDI Tagum TLE Fair' },
